@@ -1,0 +1,107 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+width: 100%;
+margin:auto;
+background-color:#f3f5f7;
+font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+     position: fixed;
+    z-index: 100000;
+}
+header li a{text-decoration: none;font-size: 15px;color: black;padding: 20px;font-weight: bold;}
+header li a:hover{text-decoration: none;color: cornflowerblue;}
+
+.aside-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.aside-icon a i {
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    color: #030b0ebb;
+}
+
+
+.ii:hover{color: rgb(109, 218, 255)}
+.iil:hover{color:rgb(109, 218, 255)}
+.iiil:hover{color:rgb(109, 218, 255)}
+.iiiil:hover{color:rgb(109, 218, 255)}
+.iiiiil:hover{color:rgb(109, 218, 255)}
+
+
+
+
+@media (max-width: 575.98px) {  }
+
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+@media (min-width: 1200px) {  }
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+
+.card-img-overlay{margin-top: 230px;}
+i{color: #0e5d7a; }
+i:hover{color:rgb(109, 218, 255)}
+.card1{background-color: #343a40;color: #fff;}
+.card1:hover{transform: scale(1.1);transition: 0.5s; background-color:#72acd6; color: #000;}
+.col-sm:hover{transform: scale(1.1);transition: 0.5s;}
+.btn:hover{transform: scale(1.1);transition: 0.5s;}
+span{color: #fff;}
+span:hover{color: black;}
+.card::before{ position: absolute; content: ""; width:0; height: 0; bottom: 0; right: 0;background-color:rgba(153, 189, 255, 0.1);}
+.card:hover::before{ width: 100%; height: 100%;  transition: 1s;}
+.card::after{ position: absolute; content: ""; width:0; height: 0; top: 0; left: 0;background-color:rgba(153, 189, 255, 0.1);}
+.card:hover::after{ width: 100%; height: 100%;  transition: 1s;}
+
+
+
+
+
+
+
+
+
+
+

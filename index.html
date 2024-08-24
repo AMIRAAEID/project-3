@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="./stethoscope-solid.svg">
+    <title>Shifa Hospital</title>
+</head>
+<body>
+    <header style="background-color:#f3f5f7; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        
+         <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" style="width: 100px;height: 75px;margin-top:-10px;">
+                <h2 style="display: inline; font-size:25px;border-right: 1px solid black;padding: 6px; ">Shifa</h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About us</a>
+                  </li>
+                    <div class="dropdown"style=" border:none;color: #000; ">
+                        <button type="button" class="btn dropdown-toggle" id="dropdwonmenu1" data-toggle="dropdown" style="background-color:#86B6F7">
+                          <span class="glyphicon glyphicon-cog"> <span style="color:#f91717;font-weight: bold;">S</span>ections </span>    
+                        <ul class="dropdown-menu" role="menu" aria-lablledby="dropdownmenu1">
+                          <li role="presentatino">
+                            <a href="#" role="menuitem" >Gynecology clinic</a>
+                          </li>
+                          <li role="presentation"> 
+                            <a href="#" role="menuitem" >Children's clinic </a>        
+                          </li>        
+                          <li role="presentation">           
+                            <a href="#" role="menuitem" > Other treatments </a>        
+                          </li>  
+                            
+                        </ul>
+                      </div>
+                    </button>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="#"> Medical Services</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="margin:0px 6px;border: none; background-color: rgb(34, 25, 56);color: #fff;border-radius:10px;">Search</button>
+
+            </form>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal" > Login
+     </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+         
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content p-4">
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img 6.jpg" class="d-block w-100" alt="..." style="width: 100%;height: 90vh;opacity:0.7;">
+                <div class="carousel-caption  d-md-block ">
+                  <h5 style="color: black; font-size:35px;">world free of diseases</h5>
+                  <p style="color: black;">Shifa Hospital, are committed to providing a safe.</p>
+                  <button type="submit" class="btn btn-primary" style="padding:8px 30px;">See More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img 7.jpeg" class="d-block w-100" alt="..."style="width: 100%;height: 90vh; opacity:0.7;">
+                <div class="carousel-caption d-md-block">
+                  <h5 style="color: black; font-size:35px;"> world free of diseases</h5>
+                  <p style="color: black;">Shifa Hospital, are committed to providing a safe.</p>
+                  <button type="submit" class="btn btn-primary" style="padding:8px 30px;">See More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img 9.jpg" class="d-block w-100" alt="..."style="width: 100%;height: 90vh;opacity:0.7;">
+                <div class="carousel-caption d-md-block">
+                  <h5 style="color: black; font-size:35px;"> world free of diseases</h5>
+                  <p style="color: black;">Shifa Hospital, are committed to providing a safe.</p>
+                  <button type="submit" class="btn btn-primary" style="padding:8px 30px;">See More</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <aside>
+            <div class="container-fluid p-0 " style="position: relative;">
+    
+                <div class="d-flex flex-column justify-content-between ms-auto"
+                    style="position: fixed;z-index: 990;top: 250px;right:30px;">
+                    <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square  ii"></i></a></div>
+                    <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square iil "></i></a></div>
+                    <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square  iiil"></i></a></div>
+                    <div class="aside-icon "><a href="#"><i class="fab fa-linkedin  iiiil"></i></a></div>
+                    <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square iiiiil"></i></a></div>
+                </div>
+                </div>
+        </aside>
+    
+          <!-- <div class="icon   " style="display: flex;flex-direction: column;position: fixed;z-index:10000000000000;">
+          
+            <i class="fab fa-facebook-square ii"></i>
+            <i class="fab fa-whatsapp-square iiiiil"></i>
+            <i class="fab fa-twitter-square iil"></i>
+            <i class="fab fa-linkedin iiil"></i>
+            <i class="fab fa-instagram-square iiiil"></i>
+            
+            -->
+
+    </main>
+  <section class="box-read " style=" background-color:#86B6F6;padding: 20px;">
+    <div style="width: 100%; height:33vh;padding: 5px;margin-top:2px;" >
+      <label for="exampleInputText" style=" color: #fff;font:30px sans-serif;">Welcome</label>
+      <input class="form-control" type="text" placeholder="Shifa Hospital, are committed to providing a safe." readonly style="width: 100%; height:25vh;background-color:#86B6F6;border: none; ">
+      <button type="submit" class="btn btn-primary" style="padding:8px 50px;margin-top: -60px;">Send</button>
+      
+                  
+    </div>
+  </section>
+
+    <section class="title-h" style="width: 100%; height:33vh;">
+      <div >
+        <input class="form-control" type="text" placeholder=" Shifa Hospital" readonly  style="height: 150px; background-color:#B4D4FF; border: none;text-align: center; font:40px sans-serif;">
+       
+      </div>
+          
+    </section>
+    <section class="Accordion" style="margin-top:-100px;">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Medications
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Gynecology clinic.</strong> Children's clinic, Pediatric Endocrinology Clinic, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Medical Services
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Gynecology clinic.</strong> Children's clinic, Pediatric Endocrinology Clinic, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Other treatments
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Gynecology clinic.</strong> Children's clinic, Pediatric Endocrinology Clinic, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+   
+    <section class="title-hl" style="width: 100%; height:33vh;">
+      <div >
+        <input class="form-control" type="text" placeholder=" Find out the timings of all our clinics" readonly  style="height: 100px; background-color:#B4D4FF; border: none;text-align: center; font:26px sans-serif;">
+       
+      </div>
+          
+    </section>
+    <section class="title-hl" style="width: 100%; height:30vh;margin-top: -150PX;color: #fff;">
+      <div >
+        <input class="form-control" type="text" placeholder="Register in English
+        " readonly  style="height:100PX ; background-color:#9ebfeb; border: none;text-align: center; font:26px sans-serif;color:#fff ;">
+        <label for="exampleInputText" style=" color: black;font:25px sans-serif;display: block;">Book Now</label>
+        <button type="submit" class="btn btn-primary" style="padding:8px 30px;margin-top: 0PX;margin-bottom: 40px;">Book</button>
+        <input class="form-control" type="text" placeholder="Book:.."style="height: 150px;margin-top:-30px ; ">
+        
+      </div>
+          
+    </section>
+    <section class="title-hl" style="width: 100%; height:30vh;margin-top: 90PX;color: #fff;">
+      <div >
+        <input class="form-control" type="text" placeholder="Register Now
+        " readonly  style="height:100PX ; background-color:#9ebfeb; border: none;text-align: center; font:26px sans-serif;color:#fff ;">
+        <label for="exampleInputText" style=" color: black;font:25px sans-serif;display: block;">Book Now</label>
+        <button type="submit" class="btn btn-primary" style="padding:8px 30px;margin-top: 0PX;margin-bottom: 40px;">Book</button>
+        <input class="form-control" type="text" placeholder="Book:.."style="height: 150px;margin-top:-30px ; ">
+         
+      </div>
+          
+    </section>
+    
+    <section class="title-hl" style="width: 100%; height:30vh;margin-top: 90PX;color: #fff;">
+      <div >
+        <input class="form-control" type="text" placeholder="Register Now
+        " readonly  style="height:100PX ; background-color:#9ebfeb; border: none;text-align: center; font:26px sans-serif;color:#fff ;">
+        <label for="exampleInputText" style=" color: black;font:25px sans-serif;display: block;">Book Now</label>
+        <button type="submit" class="btn btn-primary" style="padding:8px 30px;margin-top: 0PX;margin-bottom: 40px;">Book</button>
+        <input class="form-control" type="text" placeholder="Book:.."style="height: 150px;margin-top:-30px ; ">
+         
+      </div>
+          
+    </section>
+    
+    <section class="img-background" style="margin-top: 113px;" >
+      <img src="img/img 7.jpeg" class="img-fluid" style="background-repeat: no-repeat;background-size: cover;width: 100%;height: 40vh;" alt="Responsive image">
+
+
+
+    </section>
+
+    <section class="title-h" style="width: 100%; height:20vh;">
+      <div >
+        <input class="form-control" type="text" placeholder="Therapeutic Departments " readonly  style="height: 100px; background-color:#B4D4FF; border: none;text-align: center; font:40px sans-serif;">
+       
+      </div>
+    </section>
+    <section class="row" style="margin: auto;width: 90%; margin-top: 50px;display: flex;justify-content: space-around;">
+      <div class="card " style="width: 25rem;margin: 30px 0px;">
+        <img class="card-img-top" src="img/img 8.jpeg" alt="Card image cap">
+        <div class="card-body"style="margin-top: 30px;">
+          <h5 class="card-title">
+            Emotional breakup
+            summary
+            Not expressing feelings such as anger, affection and distress for a long time.</h5>
+          <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+          <a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+        </div>
+      </div>
+<div class="card" style="width: 25rem;margin: 30px 0px;">
+  <img class="card-img-top" src="img/th.jpeg" alt="Card image cap">
+  <div class="card-body" style="margin-top: 100px;">
+    <h5 class="card-title">Beans
+      Overview
+      Beans are the common name for seeds of a group of diverse plants belonging to genera of the legume family. Most of its species are used as human food.
+      
+      </h5>
+    <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+    <a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+  </div>
+</div>
+<div class="card" style="width: 25rem;margin: 30px 0px;">
+  <img class="card-img-top" src="img/img 7.jpeg" alt="Card image cap">
+  <div class="card-body" style="margin-top: 100px;">
+    <h5 class="card-title">Cardiology 
+      One of the worst and most dangerous diseases for humans, you must maintain a full examination every period to overcome any danger </h5>
+    <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+    <a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+  </div>
+</div>
+    </section>
+<section class="row" style="margin: auto;width: 90%; margin-top: 50px;display: flex;justify-content: space-around;">
+  <div class="card " style="width: 25rem;margin: 30px 0px;">
+    <img class="card-img-top" src="img/img 6.jpg" alt="Card image cap">
+    <div class="card-body" style="margin-top: 30px;">
+      <h5 class="card-title">Cardiology 
+        One of the worst and most dangerous diseases for humans, you must maintain a full examination every period to overcome any danger </h5>
+      <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+      <a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+    </div>
+  </div>
+<div class="card" style="width: 25rem;margin: 30px 0px;">
+<img class="card-img-top" src="img/img 4.jpeg" alt="Card image cap">
+<div class="card-body"style="margin-top: 80px;">
+<h5 class="card-title">
+  Neck pain
+  summary
+  Pain in the neck. It can be in the bones of the neck, ligaments or muscles.
+  </h5>
+<p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+<a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+</div>
+</div>
+<div class="card" style="width: 25rem; margin: 30px 0px;">
+<img class="card-img-top" src="img/img 3.jpeg" alt="Card image cap">
+<div class="card-body" style="margin-top: 90px;">
+<h5 class="card-title">
+  Cashew
+  Overview
+  Cashews or Western Baladher or love of understanding and also called cashews or cashews is a species of plant belonging to the genus Baladheridae.
+  
+  </h5>
+<p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+<a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+</div>
+</div>
+    </section>
+    <section class="row" style="margin: auto;width: 90%; margin-top: 50px;display: flex;justify-content: space-around;">
+      <div class="card " style="width: 25rem; margin: 30px 0px;">
+        <img class="card-img-top" src="img/img 2.jpeg " alt="Card image cap">
+        <div class="card-body"style="margin-top: 80px;">
+          <h5 class="card-title">Women's Health
+            10 Ways To Lose Weight In Your Face And Reduce Swelling, According To Experts
+            </h5>
+          <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+          <a href="#" class="btn btn-dark text-white"style="width: 90px;margin-left: 130px;">See More</a>
+        </div>
+      </div>
+<div class="card" style="width: 25rem;margin: 30px 0px;">
+  <img class="card-img-top" src="img/img 5.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">
+      Tennis elbow
+      summary
+      A painful condition of tendons caused by overuse of the elbow. The pain can spread from the elbow to the forearm and wrist.
+      
+      </h5>
+    <p class="card-text">Prevention is better than a thousand cures, but if there is a disease, treatment is a duty for us, and for this we offer you the solution in our useful and different treatment departments .</p>
+    <a href="#" class="btn btn-dark text-white" style="width: 90px;margin-left: 130px;">See More</a>
+  </div>
+</div> </section>
+<section class="img-background" style="margin-top: 50px;" >
+  <img src="img/img 6.jpg" class="img-fluid" style="background-repeat: no-repeat;background-size: cover;width: 100%;height: 40vh;" alt="Responsive image">
+
+
+
+</section>
+<section class="title-h" style="width: 100%; height:20vh;">
+  <div >
+    <input class="form-control" type="text" placeholder="thanks you 
+    " readonly  style="height: 100px; background-color:#B4D4FF; border: none;text-align: center; font:40px sans-serif;">
+   
+  </div>
+</section>
+
+
+
+<section class="row" style="width: 80%; margin: auto;display: flex;flex-direction: row; justify-content: space-around;margin-top: 30px;margin-bottom: 30px;border-radius: 30%;">
+  <div class="card1 " style="width: 20rem;height: 30rem;margin: 30px 0px;">
+    <img class="card-img" src="img/o3.png" alt="Card image" >
+    <div class="card1-img-overlay" >
+      <h5 class="card1-title">Thank you, Doc.</h5>
+      <p class="card1-text">Cardiology is one of the most important specialties that are concerned with diagnosing.</p>
+      <p class="card1-text">Last updated 3 mins ago</p>
+  </div>
+  </div>
+  <div class="card1 " style="width: 20rem;height: 30rem;margin: 30px 0px;">
+    <img class="card-img" src="img/doc1.png" alt="Card image" style="width: 250px;height: 320px;">
+    <div class="card1-img-overlay">
+      <h5 class="card1-title">Thank you, Doc.</h5>
+      <p class="card1-text">Cardiology is one of the most important specialties that are concerned with diagnosing.</p>
+      <p class="card1-text">Last updated 3 mins ago</p>
+    </div>
+  </div>
+  <div class="card1 " style="width: 20rem;height: 30rem;margin: 30px 0px;">
+    <img class="card-img" src="img/doctor-8559288_1280.png" alt="Card image">
+    <div class="card1-img-overlay">
+      <h5 class="card1-title">Thank you, Doc.</h5>
+      <p class="card1-text">Cardiology is one of the most important specialties that are concerned with diagnosing.</p>
+      <p class="card1-text">Last updated 3 mins ago</p>
+    </div>
+  </div>
+</section>
+
+</section>
+<section class="title-h" style="width: 100%; height:20vh;">
+  <div >
+    <input class="form-control" type="text" placeholder="Shifa Hospital News
+    " readonly  style="height: 100px; background-color:#B4D4FF; border: none;text-align: center; font:40px sans-serif;">
+   
+  </div>
+</section>
+
+<section class="col">
+  <div class="card mb-3" style="height:353px;background-color: rgb(97, 94, 94);color: #fff;">
+    <img class="card-img-top" src="img/th.jpeg" alt="Card image cap"style=" width: 400px;height: 350px; transform:skewX(8deg);margin-left:30px">
+ 
+    <div class="card-body" style="text-align:center ;margin-top:-250px;margin-left:220px;z-index: 1;">
+      <h5 class="card-title">Therapeutic Department</h5>
+      <p class="card-text">Prevention is better than a thousand cures, but if there is a disease .</p>
+      <p class="card-text"> Last updated 3 mins ago</p>
+  
+    <div class="btn-group"  role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-light">Back</button>
+      <button type="button" class="btn btn-light" style="margin: 0px 10px;">Now</button>
+      <button type="button" class="btn btn-light">Next</button>
+    </div>
+  </div>
+  </div>
+  <div class="card mb-3" style="height:353px;background-color: rgb(97, 94, 94);color: #fff;">
+    <img class="card-img-top" src="img/img 2.jpeg" alt="Card image cap"style=" width: 400px;height: 350px; transform:skewX(8deg);margin-left:30px">
+ 
+    <div class="card-body" style="text-align:center ;margin-top:-250px;margin-left:220px;z-index: 1;">
+      <h5 class="card-title">Therapeutic Department</h5>
+      <p class="card-text">Prevention is better than a thousand cures, but if there is a disease.</p>
+      <p class="card-text"> Last updated 3 mins ago</p>
+      <div class="btn-group"  role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light">Back</button>
+        <button type="button" class="btn btn-light" style="margin: 0px 10px;">Now</button>
+        <button type="button" class="btn btn-light">Next</button>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="height:353px;background-color: rgb(97, 94, 94);color: #fff;">
+    <img class="card-img-top" src="img/img 3.jpeg" alt="Card image cap"style=" width: 400px;height: 350px; transform:skewX(8deg);margin-left:30px">
+ 
+    <div class="card-body" style="text-align:center ;margin-top:-250px;margin-left:220px;z-index: 1;">
+      <h5 class="card-title">Therapeutic Department</h5>
+      <p class="card-text">Prevention is better than a thousand cures, but if there is a disease.</p>
+      <p class="card-text"> Last updated 3 mins ago</p>
+      <div class="btn-group"  role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light">Back</button>
+        <button type="button" class="btn btn-light" style="margin: 0px 10px;">Now</button>
+        <button type="button" class="btn btn-light">Next</button>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="height:353px;background-color: rgb(97, 94, 94);color: #fff;">
+    <img class="card-img-top" src="img/img 4.jpeg" alt="Card image cap"style=" width: 400px;height: 350px; transform:skewX(8deg);margin-left:30px">
+ 
+    <div class="card-body" style="text-align:center ;margin-top:-250px;margin-left:220px;z-index: 1;">
+      <h5 class="card-title">Therapeutic Department</h5>
+      <p class="card-text">Prevention is better than a thousand cures, but if there is a disease .</p>
+      <p class="card-text"> Last updated 3 mins ago</p>
+      <div class="btn-group"  role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light">Back</button>
+        <button type="button" class="btn btn-light" style="margin: 0px 10px;">Now</button>
+        <button type="button" class="btn btn-light">Next</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="title-h" style="width: 100%; height:20vh;margin-top: 50px;">
+    <div >
+      <input class="form-control" type="text" placeholder="JOIN US
+      " readonly  style="height: 100px; background-color:#B4D4FF; border: none;text-align: center; font:40px sans-serif;">
+     
+    </div>
+  </section>
+
+  
+   <section>
+    <div class="container col-sm-3 col-lg-12" style="margin-top: 50px; margin-bottom: 50px;width: 80%;">
+      <div class="row">
+        <div class="col-sm" style="border: 2px solid black;border-radius: 10%; width:400px;height:200px;margin: 0px 50px; text-align: center;padding-top: 30px;font-size: 20px;font-weight: bold;">
+          Follow us
+            <i class="fab fa-twitter-square" style="font-size: 90px;display: block;"></i>
+          
+        </div>
+        <div class="col-sm" style="border: 2px solid black;border-radius: 10%; width:400px;height:200px; margin: 10px 50px;text-align: center;padding-top: 30px;font-size: 20px;font-weight: bold;">
+          Follow us
+          
+            <i class="fab fa-whatsapp-square"  style="font-size: 90px;display: block;"></i>
+        </div>
+        <div class="col-sm" style="border: 2px solid black;border-radius: 10%; width:400px;height:200px; margin: 10px 50px;text-align: center;padding-top: 30px;font-size: 20px;font-weight: bold;">
+          Follow us
+          
+            <i class="fab fa-linkedin" style="font-size: 90px;display: block;"></i>
+           
+        </div>
+        <div class="col-sm" style="border: 2px solid black;border-radius: 10%; width:400px;height:200px;margin: 0px 50px;text-align: center;padding-top: 30px;font-size: 20px;font-weight: bold;">
+          Follow us
+          
+            <i class="fab fa-instagram-square" style="font-size: 90px;display: block;"></i>
+            
+        </div>
+      </div>
+    </div>
+
+   </section>
+
+
+
+
+
+    <footer style="text-align: center; ">
+      <div style="position: relative; background-color: #86B6F7;width: 100%; height: 70vh;display: flex;flex-direction: row; justify-content: space-around;margin-top: 50px;padding: 50px;">
+        <div  class="container row  col-sm-12 col-lg-12">
+          <div class="col-sm" style="border-top: 1px solid #fff;padding: 20px;">
+            <img src="img/img 6.jpg" alt="" style="width: 70px;height: 70px;border: 1px solid black;border-radius: 50%;display:inline;"> 
+             <span >Good hospital</span>
+             <span style="margin-top: 100px;display: block;border-top:1px solid#fff;padding:20px ;">Tel-000-000-000</span>
+             <span >Address..Egypt</span>
+             <span style="display: block;margin-top: 20px;">Fax-000-000-000</span>
+          </div>
+          <div class="col-sm" style="border-top: 1px solid #fff;padding: 20px;"  >
+            <img src="img/img 9.jpg" alt="" style="width: 70px;height: 70px;border: 1px solid black;border-radius: 50%;display:inline;">
+            <span>Important Links</span>
+            <span style="margin-top: 100px;display: block;border-top:1px solid#fff;padding:20px ;">visit us</span>
+            <span >Take alook</span>
+          </div>
+          <div class="col-sm" style="border-top: 1px solid #fff;padding: 20px;" >
+            <img src="img/img 2.jpeg" alt="" style="width: 70px;height: 70px;border: 1px solid black;border-radius: 50%;display:inline;"> 
+            <span>Vision</span>
+            <span style="margin-top: 125px;display: block;border-top:1px solid#fff;padding:10px ;">Services for all</span>
+            <span >Shifa hospital</span>
+            <span style="display: block;margin-top: 10px;">can visit hospital all day</span>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-sm1" style="color: black;font-weight: bold; background-color: #86B6F7;border-bottom: 1px solid#fff;border-top: 1px solid #fff;font-size: 20px;padding: 20px;">
+        CopyRight © 2024 by Shifa Hospital
+       </div>
+
+
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
